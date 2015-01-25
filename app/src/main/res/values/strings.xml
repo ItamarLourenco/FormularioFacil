@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Formulario Fácil</string>
+    <string name="create_a_new_form">Criar novo formulário</string>
+
+    <string-array name="navigation_drawer_adapter">
+        <item>Formularios</item>
+        <item>Criar um novo formulario</item>
+        <item>Configurações</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
