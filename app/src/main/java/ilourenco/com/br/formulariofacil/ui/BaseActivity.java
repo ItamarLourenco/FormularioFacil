@@ -31,16 +31,22 @@ public class BaseActivity extends ActionBarActivity {
     public static final int NAV_CREATE_FORM = 1;
     public static final int NAV_SETTING = 2;
 
-    public String[] mNavigationDrawerAdapter;
-    public DrawerLayout mDrawerLayout;
-    public ListView mListView;
-    public ActionBarDrawerToggle mActionBarDrawerToggle;
+    public static DrawerLayout mDrawerLayout;
+    public static ListView mListView;
 
+    public String[] mNavigationDrawerAdapter;
+    public ActionBarDrawerToggle mActionBarDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setUpNavigationEnabled(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_bar_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -52,8 +58,14 @@ public class BaseActivity extends ActionBarActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 return true;
+
+            case R.id.menu_reload:
+                displayView(NAV_CREATE_FORM);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
     protected void setUpNavigationEnabled(boolean upNavEnabled) {
@@ -154,8 +166,7 @@ public class BaseActivity extends ActionBarActivity {
 
     public void displayView(int position) {
         Fragment fragment = null;
-        switch (position)
-        {
+        switch (position){
             case NAV_FORMS:
                 fragment = FormsFragment.newInstance();
                 break;
@@ -170,15 +181,18 @@ public class BaseActivity extends ActionBarActivity {
         }
 
         if (fragment != null) {
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(id.frame_container, fragment);
-            fragmentTransaction.commit();
+            replaceFragment(getSupportFragmentManager().beginTransaction(), fragment);
 
             mListView.setItemChecked(position, true);
             mListView.setSelection(position);
 
             mDrawerLayout.closeDrawer(mListView);
         }
+    }
+
+    public static void replaceFragment(FragmentTransaction fragmentTransaction, Fragment fragment){
+        fragmentTransaction.replace(id.frame_container, fragment);
+        fragmentTransaction.commit();
     }
 
     @Override

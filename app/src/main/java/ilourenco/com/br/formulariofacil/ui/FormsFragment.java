@@ -9,7 +9,8 @@ import android.widget.Button;
 
 import ilourenco.com.br.formulariofacil.R;
 
-public class FormsFragment extends Fragment implements View.OnClickListener{
+public class FormsFragment extends BaseFragment implements View.OnClickListener{
+
     public static Fragment newInstance() {
         FormsFragment fragment = new FormsFragment();
         return fragment;
@@ -40,6 +41,6 @@ public class FormsFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-
+        BaseActivity.replaceFragment(getActivity().getSupportFragmentManager().beginTransaction(), CreateFormFragment.newInstance());
     }
 }

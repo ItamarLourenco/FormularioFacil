@@ -11,5 +11,11 @@
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_a_new_field">Criar um novo campo</string>
+    <string name="save_the_form">Salvar o Formulário</string>
+    <string name="name_of_form">Nome do Formulário:</string>
+    <string name="name_of_form_description">Por favor, entre com o nome Formulário</string>
+    <string name="type_a_name_of_form">Digite um nome para o formulário</string>
+    <string name="add_new_name">Adicionar novo nome</string>
 
 </resources>

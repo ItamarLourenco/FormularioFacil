@@ -1,4 +1,4 @@
-package ilourenco.com.br.formulariofacil.Util;
+package ilourenco.com.br.formulariofacil.util;
 import android.util.Log;
 import android.widget.Toast;
 

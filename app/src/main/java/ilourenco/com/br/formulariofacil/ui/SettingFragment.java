@@ -1,14 +1,13 @@
 package ilourenco.com.br.formulariofacil.ui;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import ilourenco.com.br.formulariofacil.R;
 
-public class SettingFragment extends Fragment {
+public class SettingFragment extends BaseFragment {
     public static SettingFragment newInstance() {
         SettingFragment fragment = new SettingFragment();
         return fragment;

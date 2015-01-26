@@ -5,4 +5,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="FormularioFacil.Button">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="FormularioFacil"></style>
+
+    <style name="FormularioFacil.Dialog">
+        <item name="android:background">@drawable/shape</item>
+    </style>
+
 </resources>
