@@ -1,10 +1,13 @@
 package ilourenco.com.br.formulariofacil.ui;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +17,9 @@ import android.widget.ListView;
 
 import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 import ilourenco.com.br.formulariofacil.R;
+
+import static ilourenco.com.br.formulariofacil.R.array;
+import static ilourenco.com.br.formulariofacil.R.id;
 
 
 /**
@@ -28,6 +34,7 @@ public class BaseActivity extends ActionBarActivity {
     public String[] mNavigationDrawerAdapter;
     public DrawerLayout mDrawerLayout;
     public ListView mListView;
+    public ActionBarDrawerToggle mActionBarDrawerToggle;
 
 
     @Override
@@ -38,6 +45,10 @@ public class BaseActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        if (mActionBarDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
         switch (item.getItemId()) {
             case android.R.id.home:
                 return true;
@@ -104,9 +115,9 @@ public class BaseActivity extends ActionBarActivity {
     }
 
     public void drawableMenu() {
-        mListView = (ListView) findViewById(R.id.list_navigation);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mNavigationDrawerAdapter = getResources().getStringArray(R.array.navigation_drawer_adapter);
+        mListView = (ListView) findViewById(id.list_navigation);
+        mDrawerLayout = (DrawerLayout) findViewById(id.drawer_layout);
+        mNavigationDrawerAdapter = getResources().getStringArray(array.navigation_drawer_adapter);
 
         mListView.setAdapter(new NavigationDrawerAdapter(FormularioFacilApp.getContext(), mNavigationDrawerAdapter));
 
@@ -117,11 +128,26 @@ public class BaseActivity extends ActionBarActivity {
             }
         });
 
+        mActionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.drawable.ic_launcher, R.drawable.ic_launcher){
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                invalidateOptionsMenu();
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+                invalidateOptionsMenu();
+            }
+        };
+
+        mDrawerLayout.setDrawerListener(mActionBarDrawerToggle);
 
         //Start Fragments
         displayView(NAV_FORMS);
-
     }
+
     private void onItemClickMenu(AdapterView<?> parent, View view, int position, long id) {
         displayView(position);
     }
@@ -144,8 +170,8 @@ public class BaseActivity extends ActionBarActivity {
         }
 
         if (fragment != null) {
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame_container, fragment);
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(id.frame_container, fragment);
             fragmentTransaction.commit();
 
             mListView.setItemChecked(position, true);
@@ -153,6 +179,18 @@ public class BaseActivity extends ActionBarActivity {
 
             mDrawerLayout.closeDrawer(mListView);
         }
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mActionBarDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mActionBarDrawerToggle.onConfigurationChanged(newConfig);
     }
 }
 
