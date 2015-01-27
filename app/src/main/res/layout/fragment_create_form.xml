@@ -16,6 +16,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/canvas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -34,7 +35,7 @@
         android:layout_margin="@dimen/menu_create_form"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/create_a_new_form"
+                android:id="@+id/create_a_new_form"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/create_a_new_field"

@@ -9,10 +9,17 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="FormularioFacil"></style>
+    <style name="FormularioFacil">
+
+    </style>
 
     <style name="FormularioFacil.Dialog">
         <item name="android:background">@drawable/shape</item>
+    </style>
+
+    <style name="FormularioFacil.NameOfForm">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/widget_edittext_dark</item>
     </style>
 
 </resources>

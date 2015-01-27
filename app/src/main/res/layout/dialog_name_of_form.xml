@@ -11,11 +11,10 @@
         android:padding="@dimen/menu_create_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:hint="@string/type_a_name_of_form"
         android:ems="10"
         style="@style/AppTheme"
-        android:id="@+id/editText" />
+        android:id="@+id/edit_text_of_new_form" />
 
     <Button
         android:padding="@dimen/menu_create_form"

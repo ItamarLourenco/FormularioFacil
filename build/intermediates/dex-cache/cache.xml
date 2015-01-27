@@ -29,5 +29,12 @@
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
         <dex dex="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/pre-dexed/debug/classes-061e8b99397813332c60d96d5f8f658f2e958d02.jar" />
     </item>
+    <item
+        jar="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/exploded-aar/de.keyboardsurfer.android.widget/crouton/1.8.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b81c788c5f175f94ddaac2f65e5d1726371e0963">
+        <dex dex="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/pre-dexed/debug/classes-63d1499e698c2e1703d704c7f3e058ed869b1996.jar" />
+    </item>
 
 </items>

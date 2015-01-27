@@ -10,6 +10,11 @@
         <item>Configurações</item>
     </string-array>
 
+    <string-array name="type_of_inputs">
+        <item>Texto</item>
+        <item>Número</item>
+    </string-array>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_a_new_field">Criar um novo campo</string>
     <string name="save_the_form">Salvar o Formulário</string>
@@ -17,5 +22,7 @@
     <string name="name_of_form_description">Por favor, entre com o nome Formulário</string>
     <string name="type_a_name_of_form">Digite um nome para o formulário</string>
     <string name="add_new_name">Adicionar novo nome</string>
+    <string name="error_add_new_name_form">Por favor, adicione um nome para o Formulario</string>
+    <string name="dialog_inputs_name">Escola o tipo de Campo</string>
 
 </resources>
