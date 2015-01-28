@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="menu_create_form">5dp</dimen>
     <dimen name="minWidthForDialog">300dp</dimen>
+    <dimen name="marginOfTitle">5dp</dimen>
+    <dimen name="marginOfTitleBottom">15dp</dimen>
 </resources>

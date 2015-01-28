@@ -1,14 +1,12 @@
 package ilourenco.com.br.formulariofacil.model;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.text.TextUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 import ilourenco.com.br.formulariofacil.R;
+import ilourenco.com.br.formulariofacil.inputs.Inputs;
 
 /**
  * Created by webx on 27/01/15.
@@ -16,7 +14,7 @@ import ilourenco.com.br.formulariofacil.R;
 public class Form {
     private String name;
     private String created_at;
-    private Input[] inputs;
+    private Inputs[] inputs;
     private LinearLayout mCanvas;
 
     public Form() {
@@ -55,11 +53,11 @@ public class Form {
         this.created_at = created_at;
     }
 
-    public Input[] getInputs() {
+    public Inputs[] getInputs() {
         return inputs;
     }
 
-    public void setInputs(Input[] inputs) {
+    public void setInputs(Inputs[] inputs) {
         this.inputs = inputs;
     }
 

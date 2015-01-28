@@ -7,20 +7,33 @@
     android:minWidth="@dimen/minWidthForDialog"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_margin="@dimen/marginOfTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/FormularioFacil.titleOfDialog"/>
+
+    <View
+        android:background="#CCC"
+        android:layout_width = "fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/marginOfTitle"
+        android:layout_marginBottom="@dimen/marginOfTitle"/>
+
     <EditText
+        android:id="@+id/edit_text"
         android:padding="@dimen/menu_create_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/type_a_name_of_form"
         android:ems="10"
         style="@style/AppTheme"
-        android:id="@+id/edit_text_of_new_form" />
+        android:layout_marginBottom="@dimen/marginOfTitleBottom"/>
 
     <Button
+        android:id="@+id/add_button"
         android:padding="@dimen/menu_create_form"
-        android:id="@+id/add_new_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/add_new_name" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
