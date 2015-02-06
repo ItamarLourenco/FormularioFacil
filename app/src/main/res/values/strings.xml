@@ -8,6 +8,7 @@
         <item>Formularios</item>
         <item>Criar um novo formulario</item>
         <item>Configurações</item>
+        <item>ListView</item>
     </string-array>
 
     <string-array name="types_of_inputs">
@@ -24,7 +25,7 @@
     <string name="add_new_name">Adicionar nome</string>
     <string name="error_add_new_name_form">Por favor, adicione um nome para o Formulario</string>
     <string name="dialog_inputs_name">Escolha o tipo de Campo</string>
-    <string name="name_field_of_text">Nome do campo Texto</string>
+    <string name="name_field_of_text">Nome do campo texto:</string>
     <string name="add_new_form">Adicionar novo formulário</string>
     <string name="type_a_name_of_input_text">Digite o nome do campo Texto</string>
 

@@ -28,9 +28,7 @@ public class FormsFragment extends BaseFragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forms, container, false);
-
         ((Button) view.findViewById(R.id.create_a_new_form)).setOnClickListener(this);
-
         return view;
     }
 
