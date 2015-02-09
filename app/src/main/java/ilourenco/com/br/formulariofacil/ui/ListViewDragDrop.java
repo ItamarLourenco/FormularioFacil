@@ -4,15 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
-import java.util.ArrayList;
+import com.jmedeisis.draglinearlayout.DragLinearLayout;
 
-import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 import ilourenco.com.br.formulariofacil.R;
-import ilourenco.com.br.formulariofacil.helpers.DynamicListView.Cheeses;
-import ilourenco.com.br.formulariofacil.helpers.DynamicListView.DynamicListView;
-import ilourenco.com.br.formulariofacil.helpers.DynamicListView.StableArrayAdapter;
 
 public class ListViewDragDrop extends BaseFragment {
 
@@ -36,17 +31,12 @@ public class ListViewDragDrop extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_view_drag_drop, container, false);
 
-        ArrayList<String>mCheeseList = new ArrayList<String>();
-        for (int i = 0; i < Cheeses.sCheeseStrings.length; ++i) {
-            mCheeseList.add(Cheeses.sCheeseStrings[i]);
+        DragLinearLayout dragLinearLayout = (DragLinearLayout) view.findViewById(R.id.container);
+        for(int i = 0; i < dragLinearLayout.getChildCount(); i++){
+            View child = dragLinearLayout.getChildAt(i);
+            // the child will act as its own drag handle
+            dragLinearLayout.setViewDraggable(child, child);
         }
-
-        StableArrayAdapter adapter = new StableArrayAdapter(FormularioFacilApp.getContext(), R.layout.text_view, mCheeseList);
-        DynamicListView listView = (DynamicListView) view.findViewById(R.id.listview);
-
-        listView.setCheeseList(mCheeseList);
-        listView.setAdapter(adapter);
-        listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
 
         return view;

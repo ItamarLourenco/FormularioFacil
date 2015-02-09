@@ -13,8 +13,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.jmedeisis.draglinearlayout.DragLinearLayout;
 
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
@@ -30,7 +31,7 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
     private Button mButtonAddNewName;
     private EditText mEditTextOfNewName;
     private Dialog mDialog;
-    private LinearLayout mCanvas;
+    private DragLinearLayout mCanvas;
     private String[] mTypeOfInputs;
 
 
@@ -53,9 +54,10 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         View view = inflater.inflate(R.layout.fragment_create_form, container, false);
         showDialogNameForm();
 
-        mCanvas = (LinearLayout) view.findViewById(R.id.canvas);
+        mCanvas = (DragLinearLayout) view.findViewById(R.id.canvas);
         mTypeOfInputs = getResources().getStringArray(R.array.types_of_inputs);
         ((Button) view.findViewById(R.id.create_a_new_form)).setOnClickListener(this);
+
 
         return view;
     }
@@ -150,6 +152,13 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
             @Override
             public void getName(String name) {
                 new EditTextField(name, mCanvas).drawView();
+
+                for(int i = 0; i < mCanvas.getChildCount(); i++){
+                    View child = mCanvas.getChildAt(i);
+                    mCanvas.setViewDraggable(child, child);
+                }
+
+
             }
         };
     }

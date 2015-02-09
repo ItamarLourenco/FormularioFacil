@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/home/webx/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/pre-dexed/debug/library-2.4.0-baacdd0d994f214da2adf35bf9ce4a5675045f3a.jar" />
+    </item>
+    <item
         jar="/usr/share/android-studio/data/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -21,6 +28,13 @@
         revision="21.1.2"
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
         <dex dex="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/pre-dexed/debug/classes-061e8b99397813332c60d96d5f8f658f2e958d02.jar" />
+    </item>
+    <item
+        jar="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/exploded-aar/com.jmedeisis/draglinearlayout/1.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="16c6d0323511adfc121e98fe551cf6e4f3b4c810">
+        <dex dex="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/pre-dexed/debug/classes-9dd4a3be075402dacd22c583cdca71624b1cd21b.jar" />
     </item>
     <item
         jar="/home/webx/Documents/android/FormularioFacil/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"

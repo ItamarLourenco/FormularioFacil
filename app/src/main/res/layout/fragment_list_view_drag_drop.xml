@@ -5,9 +5,27 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ilourenco.com.br.formulariofacil.helpers.DynamicListView.DynamicListView
-        android:id="@+id/listview"
-        android:background="#0000"
+    <com.jmedeisis.draglinearlayout.DragLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123000" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="987"/>
+
+    </com.jmedeisis.draglinearlayout.DragLinearLayout>
 </FrameLayout>

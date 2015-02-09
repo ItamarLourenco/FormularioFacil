@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "ilourenco.com.br.formulariofacil"
-        minSdkVersion 9
+        minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -24,4 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.2'
     compile 'com.android.support:support-v4:21.0.2'
     compile 'de.keyboardsurfer.android.widget:crouton:1.8.5@aar'
+    compile ('com.jmedeisis:draglinearlayout:1.0.0'){
+        exclude group: 'com.android.support', module:'support-v4'
+    }
 }
