@@ -78,4 +78,9 @@ public class Form {
             getCanvas().addView(textViewOfName);
         }
     }
+
+    public void createView(Inputs view){
+        mCanvas.addView(view.getView());
+    }
+
 }

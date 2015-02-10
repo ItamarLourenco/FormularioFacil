@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.jmedeisis.draglinearlayout.DragLinearLayout;
@@ -33,6 +34,7 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
     private Dialog mDialog;
     private DragLinearLayout mCanvas;
     private String[] mTypeOfInputs;
+    private ScrollView mScrolLView;
 
 
     public static CreateFormFragment newInstance() {
@@ -54,10 +56,11 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         View view = inflater.inflate(R.layout.fragment_create_form, container, false);
         showDialogNameForm();
 
+        mScrolLView = (ScrollView) view.findViewById(R.id.canvasScrollView);
         mCanvas = (DragLinearLayout) view.findViewById(R.id.canvas);
         mTypeOfInputs = getResources().getStringArray(R.array.types_of_inputs);
+        mCanvas.setContainerScrollView(mScrolLView);
         ((Button) view.findViewById(R.id.create_a_new_form)).setOnClickListener(this);
-
 
         return view;
     }
@@ -151,17 +154,21 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         new DialogsName(getActivity()) {
             @Override
             public void getName(String name) {
-                new EditTextField(name, mCanvas).drawView();
-
-                for(int i = 0; i < mCanvas.getChildCount(); i++){
-                    View child = mCanvas.getChildAt(i);
-                    mCanvas.setViewDraggable(child, child);
+                int t = 0;
+                while(t <= 30){
+                    t++;
+                    mForm.createView(new EditTextField(name));
                 }
-
-
+                loadViewDragLinear();
             }
         };
     }
 
+    private void loadViewDragLinear(){
+        for(int i = 0; i < mCanvas.getChildCount(); i++){
+            View child = mCanvas.getChildAt(i);
+            mCanvas.setViewDraggable(child, child);
+        }
+    }
 }
 
