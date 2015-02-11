@@ -44,14 +44,13 @@ public class DialogsName {
         addNewName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getName(editText.getText().toString());
+                DialogsName.this.onClick(editText.getText().toString());
                 mDialog.dismiss();
             }
         });
 
         mDialog.show();
     }
-    public void getName(String name){
 
-    };
+    public void onClick(String name){};
 }

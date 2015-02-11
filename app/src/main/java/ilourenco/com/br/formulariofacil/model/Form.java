@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 import ilourenco.com.br.formulariofacil.R;
-import ilourenco.com.br.formulariofacil.inputs.Inputs;
+import ilourenco.com.br.formulariofacil.fields.Fields;
 
 /**
  * Created by webx on 27/01/15.
@@ -14,7 +14,7 @@ import ilourenco.com.br.formulariofacil.inputs.Inputs;
 public class Form {
     private String name;
     private String created_at;
-    private Inputs[] inputs;
+    private Fields[] inputs;
     private LinearLayout mCanvas;
 
     public Form() {
@@ -53,11 +53,11 @@ public class Form {
         this.created_at = created_at;
     }
 
-    public Inputs[] getInputs() {
+    public Fields[] getInputs() {
         return inputs;
     }
 
-    public void setInputs(Inputs[] inputs) {
+    public void setInputs(Fields[] inputs) {
         this.inputs = inputs;
     }
 
@@ -79,7 +79,7 @@ public class Form {
         }
     }
 
-    public void createView(Inputs view){
+    public void createView(Fields view){
         mCanvas.addView(view.getView());
     }
 

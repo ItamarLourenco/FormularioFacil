@@ -2,33 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:focusableInTouchMode="true">
 
-    <FrameLayout
-        android:id="@+id/noteIconContainer"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusableInTouchMode="true">
 
-        <ImageView
-            android:id="@+id/noteIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="top|center_horizontal"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/ic_drag" />
-    </FrameLayout>
+            <EditText
+                android:id="@+id/textField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="13dp"
+                android:saveEnabled="false"
+                android:inputType="text|textNoSuggestions|textMultiLine" />
 
+            <FrameLayout
+                android:id="@+id/fieldContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.06">
 
-    <EditText
-        android:id="@+id/noteText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingTop="13dp"
-        android:saveEnabled="false"
-        android:inputType="text|textNoSuggestions|textMultiLine"
-        />
+                <ImageView
+                    android:id="@+id/move"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_drag" />
+            </FrameLayout>
 
+        </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:id="@+id/separator_vertical"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
 </LinearLayout>

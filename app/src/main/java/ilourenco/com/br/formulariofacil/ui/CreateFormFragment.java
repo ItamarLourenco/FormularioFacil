@@ -21,8 +21,8 @@ import com.jmedeisis.draglinearlayout.DragLinearLayout;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 import ilourenco.com.br.formulariofacil.R;
-import ilourenco.com.br.formulariofacil.inputs.EditTextField;
-import ilourenco.com.br.formulariofacil.inputs.Inputs;
+import ilourenco.com.br.formulariofacil.fields.EditTextField;
+import ilourenco.com.br.formulariofacil.fields.Fields;
 import ilourenco.com.br.formulariofacil.model.Form;
 import ilourenco.com.br.formulariofacil.util.DialogsName;
 
@@ -143,7 +143,7 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
 
     private void createField(int type){
         switch (type){
-            case Inputs.TYPE_TEXT:
+            case Fields.TYPE_TEXT:
                 createTextField();
                 break;
         }
@@ -153,12 +153,13 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
     private void createTextField() {
         new DialogsName(getActivity()) {
             @Override
-            public void getName(String name) {
-                int t = 0;
-                while(t <= 30){
+            public void onClick(String name) {
+                int t =0;
+                do{
                     t++;
                     mForm.createView(new EditTextField(name));
-                }
+                }while(t < 30);
+
                 loadViewDragLinear();
             }
         };

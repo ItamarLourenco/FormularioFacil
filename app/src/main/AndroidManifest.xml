@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ilourenco.com.br.formulariofacil" >
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:name=".FormularioFacilApp"
         android:allowBackup="true"
