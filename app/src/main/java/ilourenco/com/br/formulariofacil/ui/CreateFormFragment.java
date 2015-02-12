@@ -36,7 +36,6 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
     private String[] mTypeOfInputs;
     private ScrollView mScrolLView;
 
-
     public static CreateFormFragment newInstance() {
         CreateFormFragment fragment = new CreateFormFragment();
         return fragment;
@@ -154,12 +153,7 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         new DialogsName(getActivity()) {
             @Override
             public void onClick(String name) {
-                int t =0;
-                do{
-                    t++;
-                    mForm.createView(new EditTextField(name));
-                }while(t < 30);
-
+                mForm.createView(new EditTextField(name, getActivity()));
                 loadViewDragLinear();
             }
         };

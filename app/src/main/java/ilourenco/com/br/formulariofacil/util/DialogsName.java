@@ -15,15 +15,22 @@ import ilourenco.com.br.formulariofacil.R;
  * Created by webx on 28/01/15.
  */
 public class DialogsName {
-    public Activity mAct;
-    public Dialog mDialog;
+    private Activity mActivity;
+    private Dialog mDialog;
+    private int mStringNameButton;
+
     public DialogsName(Activity act){
-        mAct = act;
-        dialogForNameText(act);
+        this(act, R.string.add_new_name);
     }
 
-    public void dialogForNameText(Activity activity){
-        mDialog = new Dialog(activity);
+    public DialogsName(Activity act, int string){
+        mActivity = act;
+        mStringNameButton = string;
+        dialogForNameText();
+    }
+
+    private void dialogForNameText(){
+        mDialog = new Dialog(mActivity);
         mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         mDialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
         mDialog.setContentView(R.layout.dialog_default_text_view);
@@ -38,7 +45,7 @@ public class DialogsName {
         ((TextView) mDialog.findViewById(R.id.title)).setText(R.string.name_field_of_text);
         ((TextView) mDialog.findViewById(R.id.edit_text)).setHint(R.string.type_a_name_of_input_text);
         Button addNewName = ((Button) mDialog.findViewById(R.id.add_button));
-        addNewName.setText(R.string.add_new_name);
+        addNewName.setText(mStringNameButton);
 
         final EditText editText = (EditText) mDialog.findViewById(R.id.edit_text);
         addNewName.setOnClickListener(new View.OnClickListener() {
