@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -91,7 +92,9 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         });
 
         ((TextView) mDialog.findViewById(R.id.title)).setText(R.string.name_of_form);
-        ((TextView) mDialog.findViewById(R.id.edit_text)).setHint(R.string.type_a_name_of_form);
+        EditText editText = (EditText) mDialog.findViewById(R.id.edit_text);
+        editText.setHint(R.string.type_a_name_of_form);
+        editText.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
 
         mButtonAddNewName = (Button) mDialog.findViewById(R.id.add_button);
         mButtonAddNewName.setText(R.string.add_new_form);
@@ -145,6 +148,10 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
             case Fields.TYPE_TEXT:
                 createTextField();
                 break;
+
+            case Fields.TYPE_NUMERIC:
+                createNumericField();
+                break;
         }
 
     }
@@ -153,7 +160,17 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         new DialogsName(getActivity()) {
             @Override
             public void onClick(String name) {
-                mForm.createView(new EditTextField(name, getActivity()));
+                mForm.createView(new EditTextField(name, getActivity(), Fields.TYPE_TEXT));
+                loadViewDragLinear();
+            }
+        };
+    }
+
+    private void createNumericField() {
+        new DialogsName(getActivity(), Fields.TYPE_NUMERIC) {
+            @Override
+            public void onClick(String name) {
+                mForm.createView(new EditTextField(name, getActivity(), Fields.TYPE_NUMERIC));
                 loadViewDragLinear();
             }
         };

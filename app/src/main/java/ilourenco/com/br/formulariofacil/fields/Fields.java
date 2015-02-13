@@ -11,6 +11,11 @@ import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 public abstract class Fields {
     public static final int TYPE_TEXT = 0;
     public static final int TYPE_NUMERIC = 1;
+
+    public final static int EDIT_TYPE_NAME = 0;
+    public final static int EDIT_TYPE_TYPE = 1;
+    public final static int EDIT_TYPE_REMOVE = 2;
+
     public LinearLayout mLinearLayout = null;
 
     public void baseInput(){
