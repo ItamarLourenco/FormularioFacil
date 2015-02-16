@@ -6,38 +6,46 @@
     android:focusableInTouchMode="true"
     android:id="@+id/baseForEditText">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
 
-            <EditText
-                android:id="@+id/textField"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="13dp"
-                android:saveEnabled="false"
-                android:inputType="text|textNoSuggestions|textMultiLine" />
+        <FrameLayout
+            android:id="@+id/fieldContainer"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent">
 
-            <FrameLayout
-                android:id="@+id/fieldContainer"
+            <ImageView
+                android:id="@+id/move"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="0.06">
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_drag" />
+        </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/move"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="top|center_horizontal"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/ic_drag" />
-            </FrameLayout>
+        <EditText
+            android:id="@+id/textField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:textColor="@android:color/black" />
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/popup"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu" />
+
+    </LinearLayout>
 
     <View
         android:layout_width="fill_parent"

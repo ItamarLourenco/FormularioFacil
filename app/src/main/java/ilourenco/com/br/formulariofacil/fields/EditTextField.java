@@ -4,20 +4,26 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.text.InputType;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 
 import ilourenco.com.br.formulariofacil.FormularioFacilApp;
 import ilourenco.com.br.formulariofacil.R;
 import ilourenco.com.br.formulariofacil.util.DialogsName;
+import ilourenco.com.br.formulariofacil.util.Logger;
+import ilourenco.com.br.formulariofacil.util.Mask;
 import ilourenco.com.br.formulariofacil.util.Util;
 
 /**
  * Created by webx on 28/01/15.
  */
-public class EditTextField extends Fields implements View.OnTouchListener, View.OnLongClickListener{
+public class EditTextField extends Fields implements View.OnTouchListener, View.OnLongClickListener, View.OnClickListener{
 
     private EditText mEditText;
     private String mName;
@@ -25,12 +31,15 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
     private int mTypeField;
     private String[] mTypeOfFields;
     private LinearLayout mBaseForTextView;
+    private ImageView mPopUp;
+    private String[] mEditInputs;
 
     public EditTextField(String name, Activity activity, int typeFiel) {
         this.mActivity = activity;
         this.mName = name;
         this.mTypeField = typeFiel;
         this.mTypeOfFields = FormularioFacilApp.getContext().getResources().getStringArray(R.array.types_of_inputs);
+        this.mEditInputs = FormularioFacilApp.getContext().getResources().getStringArray(R.array.edit_inputs);
     }
 
     public void setName(String name){
@@ -49,6 +58,9 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
         baseForEditText.findViewById(R.id.fieldContainer).setOnTouchListener(this);
         mEditText.setOnLongClickListener(this);
 
+        mPopUp = (ImageView) baseForEditText.findViewById(R.id.popup);
+        mPopUp.setOnClickListener(this);
+
         setTypeOfEditText();
         updateName();
 
@@ -56,6 +68,7 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
     }
 
     private void setTypeOfEditText() {
+        mEditText.setText(null);
         switch (mTypeField){
             case Fields.TYPE_TEXT:
                 mEditText.setInputType(InputType.TYPE_TEXT_FLAG_CAP_WORDS);
@@ -64,39 +77,50 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
             case Fields.TYPE_NUMERIC:
                 mEditText.setInputType(InputType.TYPE_CLASS_NUMBER);
                 break;
+
+            case Fields.TYPE_CELPHONE:
+                mEditText.setInputType(InputType.TYPE_CLASS_PHONE);
+                break;
+
+            case Fields.TYPE_CEP:
+                mEditText.setInputType(InputType.TYPE_CLASS_NUMBER);
+                break;
         }
     }
 
     @Override
     public boolean onLongClick(View v) {
-        String[] editInputs = FormularioFacilApp.getContext().getResources().getStringArray(R.array.edit_inputs);
         AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-        builder.setTitle(R.string.dialog_edit_field).setItems(editInputs, new DialogInterface.OnClickListener() {
+        builder.setItems(mEditInputs, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                switch (which){
-                    case EDIT_TYPE_NAME:
-                        new DialogsName(mActivity, mTypeField, mName) {
-                            @Override
-                            public void onClick(String name) {
-                                mName = name;
-                                updateName();
-                            }
-                        };
-                        break;
-
-                    case EDIT_TYPE_TYPE:
-                        openDialogWithTypeOfInputs();
-                        break;
-
-                    case EDIT_TYPE_REMOVE:
-                        mBaseForTextView.removeAllViews();
-                        break;
-                }
+                selectedOptionOfEdit(which);
             }
         });
         builder.create();
         builder.show();
         return false;
+    }
+
+    private void selectedOptionOfEdit(int selected) {
+        switch (selected) {
+            case EDIT_TYPE_NAME:
+                new DialogsName(mActivity, mTypeField, mName) {
+                    @Override
+                    public void onClick(String name) {
+                        mName = name;
+                        updateName();
+                    }
+                };
+                break;
+
+            case EDIT_TYPE_TYPE:
+                openDialogWithTypeOfInputs();
+                break;
+
+            case EDIT_TYPE_REMOVE:
+                mBaseForTextView.removeAllViews();
+                break;
+        }
     }
 
     @Override
@@ -131,6 +155,14 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
             case Fields.TYPE_NUMERIC:
                 mTypeField = Fields.TYPE_NUMERIC;
                 break;
+
+            case Fields.TYPE_CELPHONE:
+                mTypeField = Fields.TYPE_CELPHONE;
+                break;
+
+            case Fields.TYPE_CEP:
+                mTypeField = Fields.TYPE_CEP;
+                break;
         }
         updateName();
         setTypeOfEditText();
@@ -138,5 +170,36 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
 
     public void updateName(){
         mEditText.setHint(Util.formatNameAndtype(mName, mTypeOfFields[mTypeField]));
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.popup:
+                openPupUpMenu();
+                break;
+        }
+    }
+
+    private void openPupUpMenu() {
+        int idForMenu = 0;
+
+        PopupMenu popup = new PopupMenu(mActivity, mPopUp);
+        popup.getMenuInflater().inflate(R.menu.menu_edit_text, popup.getMenu());
+
+        for(String menu : mEditInputs){
+            popup.getMenu().add(0, idForMenu, idForMenu, menu);
+            idForMenu++;
+        }
+
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                selectedOptionOfEdit(item.getItemId());
+                return true;
+            }
+        });
+
+        popup.show();
     }
 }

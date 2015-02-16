@@ -63,6 +63,18 @@ public class DialogsName {
                 hint = FormularioFacilApp.getContext().getString(R.string.type_a_name_of_input_numeric);
                 textButton = FormularioFacilApp.getContext().getString(R.string.add_new_name);
             break;
+
+            case Fields.TYPE_CELPHONE:
+                name = FormularioFacilApp.getContext().getString(R.string.name_field_of_celphone);
+                hint = FormularioFacilApp.getContext().getString(R.string.type_a_name_of_input_celphone);
+                textButton = FormularioFacilApp.getContext().getString(R.string.add_new_name);
+                break;
+
+            case Fields.TYPE_CEP:
+                name = FormularioFacilApp.getContext().getString(R.string.name_field_of_cep);
+                hint = FormularioFacilApp.getContext().getString(R.string.type_a_name_of_input_cep);
+                textButton = FormularioFacilApp.getContext().getString(R.string.add_new_name);
+                break;
         }
 
         dialogForNameText(name, hint, textButton);

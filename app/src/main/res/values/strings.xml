@@ -14,12 +14,16 @@
     <string-array name="types_of_inputs">
         <item>Texto</item>
         <item>Numérico</item>
+        <item>Telefone / Celular</item>
+        <item>CEP</item>
+        <item>C.P.F</item>
+        <item>Senha</item>
     </string-array>
 
     <string-array name="edit_inputs">
-        <item>Mudar nome</item>
-        <item>Mudar tipo</item>
-        <item>Remover</item>
+        <item>Mudar nome do campo</item>
+        <item>Mudar tipo do campo</item>
+        <item>Remover campo</item>
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -39,4 +43,8 @@
     <string name="type_a_name_of_input_text">Digite o nome do campo Texto</string>
     <string name="type_a_name_of_input_numeric">Digite o nome do campo Numérico</string>
     <string name="dialog_edit_field">Editar Campo</string>
+    <string name="name_field_of_celphone">Nome do campo Telefone / Celular:</string>
+    <string name="type_a_name_of_input_celphone">Digite o nome do campo Telefone / Celular</string>
+    <string name="name_field_of_cep">Nome do campo Cep:</string>
+    <string name="type_a_name_of_input_cep">Digite o nome do campo Cep</string>
 </resources>

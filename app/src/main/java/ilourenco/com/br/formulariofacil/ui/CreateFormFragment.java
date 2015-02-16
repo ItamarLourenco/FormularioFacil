@@ -60,7 +60,7 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
         mCanvas = (DragLinearLayout) view.findViewById(R.id.canvas);
         mTypeOfInputs = getResources().getStringArray(R.array.types_of_inputs);
         mCanvas.setContainerScrollView(mScrolLView);
-        ((Button) view.findViewById(R.id.create_a_new_form)).setOnClickListener(this);
+        view.findViewById(R.id.create_a_new_form).setOnClickListener(this);
 
         return view;
     }
@@ -152,6 +152,22 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
             case Fields.TYPE_NUMERIC:
                 createNumericField();
                 break;
+
+            case Fields.TYPE_CELPHONE:
+                createCelPhoneField();
+                break;
+
+            case Fields.TYPE_CEP:
+                createCepField();
+                break;
+
+            case Fields.TYPE_CPF:
+                createCpfField();
+                break;
+
+            case Fields.TYPE_PASSWORD:
+                createPasswordField();
+                break;
         }
 
     }
@@ -175,6 +191,36 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
             }
         };
     }
+
+    private void createCelPhoneField() {
+        new DialogsName(getActivity(), Fields.TYPE_CELPHONE) {
+            @Override
+            public void onClick(String name) {
+                mForm.createView(new EditTextField(name, getActivity(), Fields.TYPE_CELPHONE));
+                loadViewDragLinear();
+            }
+        };
+    }
+
+    private void createCepField() {
+        new DialogsName(getActivity(), Fields.TYPE_CEP) {
+            @Override
+            public void onClick(String name) {
+                mForm.createView(new EditTextField(name, getActivity(), Fields.TYPE_CEP));
+                loadViewDragLinear();
+            }
+        };
+    }
+
+    private void createCpfField() {
+
+    }
+
+    private void createPasswordField() {
+
+    }
+
+
 
     private void loadViewDragLinear(){
         for(int i = 0; i < mCanvas.getChildCount(); i++){
