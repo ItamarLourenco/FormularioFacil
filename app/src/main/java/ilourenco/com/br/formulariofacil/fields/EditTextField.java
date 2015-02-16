@@ -29,10 +29,10 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
     private String mName;
     private Activity mActivity;
     private int mTypeField;
-    private String[] mTypeOfFields;
     private LinearLayout mBaseForTextView;
     private ImageView mPopUp;
     private String[] mEditInputs;
+    private String[] mTypeOfFields;
 
     public EditTextField(String name, Activity activity, int typeFiel) {
         this.mActivity = activity;
@@ -45,6 +45,7 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
     public void setName(String name){
         this.mName = name;
     }
+
     public String getName(){
         return mName;
     }
@@ -175,9 +176,10 @@ public class EditTextField extends Fields implements View.OnTouchListener, View.
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.popup:
+            case R.id.popup:{
                 openPupUpMenu();
                 break;
+            }
         }
     }
 

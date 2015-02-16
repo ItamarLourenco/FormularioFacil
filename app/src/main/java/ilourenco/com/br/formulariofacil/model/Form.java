@@ -1,6 +1,7 @@
 package ilourenco.com.br.formulariofacil.model;
 
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -11,7 +12,7 @@ import ilourenco.com.br.formulariofacil.fields.Fields;
 /**
  * Created by webx on 27/01/15.
  */
-public class Form {
+public class Form{
     private String name;
     private String created_at;
     private Fields[] inputs;
@@ -82,5 +83,4 @@ public class Form {
     public void createView(Fields view){
         mCanvas.addView(view.getView());
     }
-
 }

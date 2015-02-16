@@ -220,8 +220,6 @@ public class CreateFormFragment extends BaseFragment implements View.OnClickList
 
     }
 
-
-
     private void loadViewDragLinear(){
         for(int i = 0; i < mCanvas.getChildCount(); i++){
             View child = mCanvas.getChildAt(i);

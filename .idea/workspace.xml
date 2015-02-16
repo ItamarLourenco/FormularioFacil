@@ -40,68 +40,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateFormFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/CreateFormFragment.java">
+      <file leaf-file-name="FormularioFacilDatabaseHelper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilDatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="2685">
-              <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.28896672" vertical-offset="0" max-vertical-offset="615">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
-                <element signature="e#3455#3476#0" expanded="true" />
-                <element signature="e#3581#3609#0" expanded="true" />
-                <element signature="e#3790#3811#0" expanded="true" />
-                <element signature="e#4420#4452#0" expanded="true" />
-                <element signature="e#4922#4949#0" expanded="true" />
-                <element signature="method#createTextField#0;class#CreateFormFragment#0" expanded="false" />
-                <element signature="method#createNumericField#0;class#CreateFormFragment#0" expanded="false" />
-                <element signature="method#createCpfField#0;class#CreateFormFragment#0" expanded="false" />
-                <element signature="method#createPasswordField#0;class#CreateFormFragment#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditTextField.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/EditTextField.java">
+      <file leaf-file-name="FormularioFacilSql.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68301225" vertical-offset="0" max-vertical-offset="780">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding>
-                <element signature="method#EditTextField#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#getView#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#setTypeOfEditText#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#onLongClick#0;class#EditTextField#0" expanded="false" />
-                <element signature="e#3183#3360#0" expanded="true" />
-                <element signature="e#3349#3350#0" expanded="true" />
-                <element signature="method#selectedOptionOfEdit#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#onTouch#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#openDialogWithTypeOfInputs#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#tradeTypeOfField#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#updateName#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#onClick#0;class#EditTextField#0" expanded="false" />
-                <element signature="method#openPupUpMenu#0;class#EditTextField#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fields.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/Fields.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="field_edit_text.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/field_edit_text.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="FormularioFacilContract.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilContract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333" vertical-offset="228" max-vertical-offset="930">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="735">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseColumns.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///androidstudio/adt-bundle-mac-x86_64-20140702/sdk/sources/android-21/android/provider/BaseColumns.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -1086,9 +1063,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values-w820dp/navigation_drawer_adapter_array" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/NavigationDrawerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/Util/Logger.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/navigation_layout.xml" />
@@ -1120,7 +1094,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_note.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_form.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/inputs/Inputs.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/model/Form.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/field_edit_text_text.xml" />
@@ -1134,9 +1107,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/util/DialogsName.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/util/Mask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/Fields.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/field_edit_text.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/CreateFormFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/EditTextField.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/field_edit_text.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/model/Form.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilSql.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilDatabaseHelper.java" />
       </list>
     </option>
   </component>
@@ -1171,7 +1148,80 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Formulario Facil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Formulario Facil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Formulario Facil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Formulario Facil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formulariofacil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Formulario Facil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formulariofacil" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="provider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1206,95 +1256,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="formulariofacil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="formulariofacil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Formulario Facil" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1518,14 +1481,14 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14696486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17838125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1560,18 +1523,87 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/CreateFormFragment.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
+          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <folding>
+            <element signature="method#newInstance#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#CreateFormFragment#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#showDialogNameForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onClick#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#openDialogWithTypeOfInputs#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createTextField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createNumericField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCelPhoneField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCepField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCpfField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createPasswordField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#loadViewDragLinear#0;class#CreateFormFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/EditTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="780">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="method#EditTextField#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#getView#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#setTypeOfEditText#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#onLongClick#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#selectedOptionOfEdit#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#onTouch#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#openDialogWithTypeOfInputs#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#tradeTypeOfField#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#updateName#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#onClick#0;class#EditTextField#0" expanded="false" />
+            <element signature="method#openPupUpMenu#0;class#EditTextField#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/Fields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="555">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/field_edit_text.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="930">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/CreateFormFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
           <caret line="154" column="9" selection-start-line="146" selection-start-column="8" selection-end-line="154" selection-end-column="9" />
           <folding>
-            <element signature="e#3455#3476#0" expanded="true" />
-            <element signature="e#3581#3609#0" expanded="true" />
-            <element signature="e#3790#3811#0" expanded="true" />
-            <element signature="e#4420#4452#0" expanded="true" />
-            <element signature="e#4922#4949#0" expanded="true" />
+            <element signature="method#newInstance#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#CreateFormFragment#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#showDialogNameForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onClick#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#openDialogWithTypeOfInputs#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createTextField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createNumericField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCelPhoneField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCepField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createCpfField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createPasswordField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#loadViewDragLinear#0;class#CreateFormFragment#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1585,8 +1617,6 @@
             <element signature="method#getView#0;class#EditTextField#0" expanded="false" />
             <element signature="method#setTypeOfEditText#0;class#EditTextField#0" expanded="false" />
             <element signature="method#onLongClick#0;class#EditTextField#0" expanded="false" />
-            <element signature="e#3183#3360#0" expanded="true" />
-            <element signature="e#3349#3350#0" expanded="true" />
             <element signature="method#selectedOptionOfEdit#0;class#EditTextField#0" expanded="false" />
             <element signature="method#onTouch#0;class#EditTextField#0" expanded="false" />
             <element signature="method#openDialogWithTypeOfInputs#0;class#EditTextField#0" expanded="false" />
@@ -1880,7 +1910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1916,18 +1945,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33274958" vertical-offset="53360" max-vertical-offset="107340">
           <caret line="3652" column="16" selection-start-line="3652" selection-start-column="16" selection-end-line="3652" selection-end-column="16" />
-          <folding>
-            <element signature="e#139071#139072#0" expanded="true" />
-            <element signature="e#139105#139106#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/model/Form.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/util/Mask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7635727" vertical-offset="419" max-vertical-offset="990">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.60595447" vertical-offset="284" max-vertical-offset="855">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1936,59 +1960,65 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333" vertical-offset="228" max-vertical-offset="930">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.43566176" vertical-offset="228" max-vertical-offset="930">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/Fields.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/model/Form.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.50087565" vertical-offset="299" max-vertical-offset="870">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="method#getTextViewOfName#0;class#Form#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/ui/CreateFormFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="2685">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.9982487" vertical-offset="0" max-vertical-offset="885">
+          <caret line="174" column="35" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
           <folding>
-            <element signature="e#3455#3476#0" expanded="true" />
-            <element signature="e#3581#3609#0" expanded="true" />
-            <element signature="e#3790#3811#0" expanded="true" />
-            <element signature="e#4420#4452#0" expanded="true" />
-            <element signature="e#4922#4949#0" expanded="true" />
+            <element signature="method#newInstance#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#CreateFormFragment#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#showDialogNameForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createForm#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#onClick#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#openDialogWithTypeOfInputs#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createTextField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createNumericField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCelPhoneField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#createCepField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createCpfField#0;class#CreateFormFragment#0" expanded="false" />
             <element signature="method#createPasswordField#0;class#CreateFormFragment#0" expanded="false" />
+            <element signature="method#loadViewDragLinear#0;class#CreateFormFragment#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/util/Mask.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/Fields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60595447" vertical-offset="284" max-vertical-offset="855">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.68301225" vertical-offset="0" max-vertical-offset="571">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/fields/EditTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68301225" vertical-offset="0" max-vertical-offset="780">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7723293" vertical-offset="219" max-vertical-offset="795">
+          <caret line="176" column="32" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="32" />
           <folding>
             <element signature="method#EditTextField#0;class#EditTextField#0" expanded="false" />
             <element signature="method#getView#0;class#EditTextField#0" expanded="false" />
             <element signature="method#setTypeOfEditText#0;class#EditTextField#0" expanded="false" />
             <element signature="method#onLongClick#0;class#EditTextField#0" expanded="false" />
-            <element signature="e#3183#3360#0" expanded="true" />
-            <element signature="e#3349#3350#0" expanded="true" />
             <element signature="method#selectedOptionOfEdit#0;class#EditTextField#0" expanded="false" />
             <element signature="method#onTouch#0;class#EditTextField#0" expanded="false" />
             <element signature="method#openDialogWithTypeOfInputs#0;class#EditTextField#0" expanded="false" />
@@ -1996,6 +2026,42 @@
             <element signature="method#updateName#0;class#EditTextField#0" expanded="false" />
             <element signature="method#onClick#0;class#EditTextField#0" expanded="false" />
             <element signature="method#openPupUpMenu#0;class#EditTextField#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///androidstudio/adt-bundle-mac-x86_64-20140702/sdk/sources/android-21/android/provider/BaseColumns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="735">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ilourenco/com/br/formulariofacil/provider/FormularioFacilDatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28896672" vertical-offset="0" max-vertical-offset="615">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
