@@ -8,7 +8,6 @@
         <item>Formularios</item>
         <item>Criar um novo formulario</item>
         <item>Configurações</item>
-        <item>ListView</item>
     </string-array>
 
     <string-array name="types_of_inputs">

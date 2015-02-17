@@ -30,7 +30,6 @@ public class BaseActivity extends ActionBarActivity {
     public static final int NAV_FORMS = 0;
     public static final int NAV_CREATE_FORM = 1;
     public static final int NAV_SETTING = 2;
-    public static final int NAV_DYNAMIC_LIST_VIEW = 3;
 
     public static DrawerLayout mDrawerLayout;
     public static ListView mListView;
@@ -180,9 +179,6 @@ public class BaseActivity extends ActionBarActivity {
                 fragment = SettingFragment.newInstance();
                 break;
 
-            case NAV_DYNAMIC_LIST_VIEW:
-                fragment = ListViewDragDrop.newInstance();
-                break;
         }
 
         if (fragment != null) {

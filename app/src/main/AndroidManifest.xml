@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <provider
+            android:name=".provider.FormularioFacilProvider"
+            android:authorities="${applicationId}.provider.app"
+            android:exported="false" />
+
     </application>
 
 </manifest>
